@@ -1,0 +1,142 @@
+/*Reset all spaces*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #171717;
+  color: #f2f2f2;
+}
+
+/*Navigation*/
+nav {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a button {
+  color: #f2f2f2;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+/*Home*/
+#home {
+  height: 100vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#introduction {
+  width: 40vw;
+  height: auto;
+  min-width: 500px;
+}
+
+.hook {
+  font-weight: bold;
+  font-size: 2rem;
+  color: aqua;
+}
+
+.profile-pic {
+  width: 50vw;
+  height: auto;
+  min-width: 500px;
+  background-color: red;
+}
+
+/*About*/
+#about {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introduction {
+  height: auto;
+  width: 70vw;
+  text-align: center;
+  text-indent: 5rem;
+  text-align: justify;
+  padding: 40px;
+}
+
+.introduction h2 {
+  text-align: center;
+}
+
+.container-language {
+  height: auto;
+  width: 70vw;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  border: solid;
+}
+
+.container-language div {
+  border: solid;
+  padding: 10px;
+  margin: 10px;
+}
+/*Education*/
+#education {
+  width: 100vw;
+  height: 30vh;
+  background-color: aqua;
+}
+/*Experience*/
+/*Skills*/
+/*Projects*/
+#projects {
+  height: 100vh;
+}
+
+/*Contacts*/
+#contacts {
+  height: 20vh;
+  opacity: 70%;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+}
+
+/*Smartphone*/
+@media screen and (max-width: 767px) {
+}

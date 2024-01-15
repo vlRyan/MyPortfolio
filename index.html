@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"
-</head>
-<body>
-    <script src="script.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MyPorfolio</title>
+    <meta name="description" content="Web Dev Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="indexStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#home"><button>Home</button></a>
+      <a href="#about"><button>About</button></a>
+      <a href="#education"><button>Education</button></a>
+      <a href="#experience"><button>Experience</button></a>
+      <a href="#skills"><button>Skills</button></a>
+      <a href="#projects"><button>Projects</button></a>
+      <a href="#contacts"><button>Contacts</button></a>
+    </nav>
 
-    <header>
+    <section id="home">
+      <div id="introduction">
+        <h1>
+          <span class="hook">Building the Web, One Line at a Time</span>
+        </h1>
+        <h2>
+          I'm <span class="name hook">Ryan Pul-ocan</span>, a Web Developer
+        </h2>
+      </div>
 
-        <nav>
-            <li>Home</li>
-            <li>About</li>
-            <li>Works</li>
-            <li>Contacts</li>
-        </nav>
-
-    </header>
-
-    <section>
-        <h1>Ryan L. Pul-ocan</h1>
-        <h2>A Front Web Developer</h2>
-        <img src="" alt="My Profile">
-
-
+      <img class="profile-pic" src="" alt="My Profile Picture" />
     </section>
 
-    <section>
-
+    <section id="about">
+      <div class="introduction">
         <h2>About Me</h2>
-        <img src="" alt="My Picture">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit nesciunt quaerat dolores quia quibusdam possimus qui placeat tenetur repudiandae. Velit blanditiis omnis corporis ipsum illum nesciunt, necessitatibus dolore maiores.</p>
-
+        <p>
+          "Hello, I'm Ryan, a recent graduate excited to embark on a journey
+          into the world of web development. I may be new to the field, but my
+          enthusiasm and dedication to learning are boundless. Now, I'm eager to
+          apply my knowledge to real-world projects and start making a
+          difference in the digital realm. My goal is to transform my learning
+          experiences into practical solutions that inspire and delight users.
+          While I may not have a wealth of experience yet, I'm eager to
+          collaborate, learn, and grow alongside seasoned professionals."
+        </p>
+      </div>
     </section>
 
-    <section>
-
-
+    <section id="education">
+      <li></li>
     </section>
 
-    <section>
+    <section id="experience"></section>
 
-        <footer>
-
-            <li>Gmail</li>
-            <li>Facebook</li>
-            <li>Phone Number</li>
-            <li></li>
-
-        </footer>
-
+    <section id="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>PHP</div>
+      <div>C#</div>
+      <div>Python</div>
+      <div>Java</div>
+      <div>MySQL</div>
     </section>
 
-</body>
+    <section id="projects">
+      <h2>My Works</h2>
+      <div class="container-work">
+        <div class="img-container">
+          <img src="" alt="My project 1" />
+          <div class="project-name">1</div>
+        </div>
+
+        <div class="img-container">
+          <img src="" alt="My project 2" />
+          <div class="project-name">2</div>
+        </div>
+
+        <div class="img-container">
+          <img src="" alt="My project 3" />
+          <div class="project-name">3</div>
+        </div>
+
+        <div class="img-container">
+          <img src="" alt="My project 4" />
+          <div class="project-name">4</div>
+        </div>
+
+        <div class="img-container">
+          <img src="" alt="My project 5" />
+          <div class="project-name">5</div>
+        </div>
+
+        <button class="previous slider-button" type="button">&#10094;</button>
+        <button class="next slider-button" type="button">&#10095;</button>
+      </div>
+
+      <div class="navigation-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <script src="script.js" async defer></script>
+  </body>
 </html>
