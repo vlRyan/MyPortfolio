@@ -16,117 +16,290 @@ html {
 }
 
 body {
-  background-color: #171717;
-  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f2f9;
+  color: #0a090d;
 }
 
 /*Navigation*/
 nav {
   position: fixed;
   display: flex;
-  width: 100vw;
-  height: 10vh;
-  justify-content: flex-end;
+  width: 70dvw;
+  height: auto;
+  justify-content: space-between;
   align-items: center;
+  z-index: 2;
+  padding: 2rem 0 2rem 0;
+  align-self: center;
+}
+
+nav h2 {
+  color: #6150c7;
+  font-size: 2rem;
 }
 
 nav a button {
-  color: #f2f2f2;
+  color: #6150c7;
   text-decoration: none;
   border: none;
   background: none;
   font-size: 1rem;
   cursor: pointer;
-  margin-right: 1rem;
-  padding-right: 1rem;
+  margin-right: 2rem;
+}
+
+nav a:last-child {
+  margin-right: -2rem;
 }
 
 /*Home*/
 #home {
-  height: 100vh;
+  width: 70dvw;
+  height: 90dvh;
   display: flex;
-  justify-self: center;
   align-items: center;
   justify-content: space-evenly;
+  gap: 10px;
+  background-color: #ebeaf1;
+  margin-top: 10dvh;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
 }
 
-#introduction {
-  width: 40vw;
-  height: auto;
-  min-width: 500px;
+.profile-icon {
+  width: 350px;
+  height: 350px;
+  margin-left: -120px;
 }
 
 .hook {
   font-weight: bold;
   font-size: 2rem;
-  color: aqua;
+  color: #6048f2;
 }
 
-.profile-pic {
-  width: 50vw;
-  height: auto;
-  min-width: 500px;
-  background-color: red;
+.hook-2 {
+  text-indent: 5rem;
+}
+
+#introduction-home h2 {
+  color: #0a090d;
 }
 
 /*About*/
 #about {
-  width: 100vw;
-  height: 70vh;
+  width: 70dvw;
+  height: auto;
+  color: #0a090d;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ebeaf1;
+}
+
+.about-icon {
+  width: 300px;
+  height: 300px;
+}
+
+#about h2 {
+  color: #6150c7;
+  margin-bottom: 20px;
+}
+
+#about p {
+  text-indent: 3rem;
+}
+
+.introduction-about {
+  width: 70dvw;
+  height: auto;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#education {
+  width: 70dvw;
+  height: 40px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.card {
+  min-width: 200px;
+  height: 25px;
+  background: #6150c7;
+  transition: all 0.4s;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #f3f2f9;
+  padding: 10px;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1);
+  background: #9a8cea;
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  opacity: 1;
+  border-radius: 15px;
 }
 
-.introduction {
-  height: auto;
-  width: 70vw;
-  text-align: center;
-  text-indent: 5rem;
-  text-align: justify;
-  padding: 40px;
+.card:hover .first-content {
+  height: 0px;
+  opacity: 0;
 }
 
-.introduction h2 {
-  text-align: center;
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
 }
 
-.container-language {
-  height: auto;
-  width: 70vw;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  border: solid;
+.card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1rem;
+  transform: rotate(0deg);
 }
 
-.container-language div {
-  border: solid;
-  padding: 10px;
-  margin: 10px;
-}
-/*Education*/
-#education {
-  width: 100vw;
-  height: 30vh;
-  background-color: aqua;
-}
-/*Experience*/
 /*Skills*/
+#skills {
+  width: 70dvw;
+  height: auto;
+  margin: 20px;
+  background-color: #ebeaf1;
+  padding: 20px;
+}
+
+#skills h2 {
+  color: #6150c7;
+  margin-bottom: 20px;
+}
+
+#skills h3 {
+  color: #f3f2f9;
+  font-size: 1rem;
+}
+
+.skills-container {
+  width: 70dvw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  perspective: 1000px;
+  color: #f3f2f9;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #6150c7;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #9a8cea;
+  transform: rotateY(180deg);
+}
+
 /*Projects*/
 #projects {
-  height: 100vh;
+  height: auto;
+  width: 70dvw;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ebeaf1;
+}
+
+#projects h2 {
+  color: #6150c7;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  height: auto;
+  width: 70dvw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.project {
+  width: 350px;
+  height: 200px;
+  background-color: #9a8cea;
 }
 
 /*Contacts*/
 #contacts {
-  height: 20vh;
-  opacity: 70%;
-}
-
-footer h2 {
-  text-align: center;
+  width: 70dvw;
+  height: auto;
+  background-color: #6150c7;
+  color: #f3f2f9;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 /*Desktop*/
@@ -135,8 +308,33 @@ footer h2 {
 
 /*Tablet*/
 @media screen and (min-width: 767px) and (max-width: 1023px) {
+  #about,
+  #education,
+  #skills,
+  #projects,
+  #contacts {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  #home {
+    width: 100dvw;
+  }
 }
 
 /*Smartphone*/
 @media screen and (max-width: 767px) {
+  #home,
+  #about,
+  #education,
+  #skills,
+  #projects,
+  #contacts {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  #home {
+    width: 100dvw;
+  }
 }

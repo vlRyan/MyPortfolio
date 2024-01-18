@@ -3,38 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MyPorfolio</title>
+    <title>RpPorfolio</title>
     <meta name="description" content="Web Dev Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="indexStyle.css" />
   </head>
   <body>
     <nav>
-      <a href="#home"><button>Home</button></a>
-      <a href="#about"><button>About</button></a>
-      <a href="#education"><button>Education</button></a>
-      <a href="#experience"><button>Experience</button></a>
-      <a href="#skills"><button>Skills</button></a>
-      <a href="#projects"><button>Projects</button></a>
-      <a href="#contacts"><button>Contacts</button></a>
+      <h2>RP</h2>
+      <span>
+        <a href="#home"><button>Home</button></a>
+        <a href="#about"><button>About</button></a>
+        <a href="#skills"><button>Skills</button></a>
+        <a href="#projects"><button>Projects</button></a>
+        <a href="#contacts"><button>Contacts</button></a>
+      </span>
     </nav>
 
     <section id="home">
-      <div id="introduction">
+      <div id="introduction-home">
         <h1>
-          <span class="hook">Building the Web, One Line at a Time</span>
+          <div class="hook hook-1">Building the Web,</div>
+          <div class="hook hook-2">One Line at a Time</div>
         </h1>
         <h2>
           I'm <span class="name hook">Ryan Pul-ocan</span>, a Web Developer
         </h2>
       </div>
 
-      <img class="profile-pic" src="" alt="My Profile Picture" />
+      <img class="profile-icon" src="res/profile.svg" alt="Profile Image" />
     </section>
 
     <section id="about">
-      <div class="introduction">
-        <h2>About Me</h2>
+      <h2>About Me</h2>
+      <div class="introduction-about">
+        <img class="about-icon" src="res/about.svg" alt="Profile Image" />
         <p>
           "Hello, I'm Ryan, a recent graduate excited to embark on a journey
           into the world of web development. I may be new to the field, but my
@@ -46,66 +49,178 @@
           collaborate, learn, and grow alongside seasoned professionals."
         </p>
       </div>
-    </section>
 
-    <section id="education">
-      <li></li>
+      <div id="education">
+        <div class="card">
+          <div class="first-content">
+            <span>College</span>
+          </div>
+          <div class="second-content">
+            <span>University of the Cordilleras</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="first-content">
+            <span>Senior High School</span>
+          </div>
+          <div class="second-content">
+            <span>Guinzadan National High School</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="first-content">
+            <span>Junior High School</span>
+          </div>
+          <div class="second-content">
+            <span>Guinzadan National High School</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="first-content">
+            <span>Primary School</span>
+          </div>
+          <div class="second-content">
+            <span>Guinzadan Elementary School</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience"></section>
 
     <section id="skills">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>PHP</div>
-      <div>C#</div>
-      <div>Python</div>
-      <div>Java</div>
-      <div>MySQL</div>
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">HTML</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Intermediate</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">CSS</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">JavaScript</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">MySQL</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">PHP</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">Kotlin</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">Python</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">C#</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 class="heading">Java</h3>
+            </div>
+            <div class="flip-card-back">
+              <h3 class="heading">Beginner</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
       <h2>My Works</h2>
-      <div class="container-work">
-        <div class="img-container">
-          <img src="" alt="My project 1" />
-          <div class="project-name">1</div>
+
+      <div class="project-container">
+        <div class="project-container-1 project">
+          <img src="" alt="Project Image" />
+          <div class="project-name">WPF Recipe App</div>
         </div>
 
-        <div class="img-container">
-          <img src="" alt="My project 2" />
-          <div class="project-name">2</div>
+        <div class="project-container-2 project">
+          <img src="" alt="Project Image" />
+          <div class="project-name">CRUD System</div>
         </div>
-
-        <div class="img-container">
-          <img src="" alt="My project 3" />
-          <div class="project-name">3</div>
-        </div>
-
-        <div class="img-container">
-          <img src="" alt="My project 4" />
-          <div class="project-name">4</div>
-        </div>
-
-        <div class="img-container">
-          <img src="" alt="My project 5" />
-          <div class="project-name">5</div>
-        </div>
-
-        <button class="previous slider-button" type="button">&#10094;</button>
-        <button class="next slider-button" type="button">&#10095;</button>
-      </div>
-
-      <div class="navigation-dots">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
       </div>
     </section>
 
+    <footer id="contacts">
+      <h2>Get in Touch</h2>
+
+      <div>
+        <ul>
+          <li>
+            <a href="mail.google.com/mail">Gmail: ryan.pulocan6@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/vlRLP/"
+              >Facebook: Ryan L. Pul-ocan</a
+            >
+          </li>
+          <li><a href="https://github.com/vlRyan">Github: vlRyan</a></li>
+          <li><a href="">Phone: 09152945730</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js" async defer></script>
   </body>
 </html>
