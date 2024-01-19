@@ -79,14 +79,14 @@ nav span {
   display: flex;
 }
 
-button {
+.nav-btn {
   position: relative;
   display: flex;
   border-radius: 5px;
   cursor: pointer;
 }
 
-button:after {
+.nav-btn:after {
   content: " ";
   width: 0%;
   height: 100%;
@@ -97,7 +97,7 @@ button:after {
   right: 0;
 }
 
-button:hover::after {
+.nav-btn:hover::after {
   right: auto;
   left: 0;
   width: 100%;
@@ -107,7 +107,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a button:hover span {
+nav a .nav-btn:hover span {
   color: #f3f2f9;
   z-index: 3;
 }
